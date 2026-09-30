@@ -24,7 +24,7 @@ else:
 print(v)
 print(er_count)
 print(bolwe_count)
-print(f"{max_temp:.2f}")
+print(f"{max_temp:.1f}")
 print(f"{a:.1f}")
         
         
