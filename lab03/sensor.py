@@ -1,11 +1,11 @@
-t = float(input())
-v = int(input())
+p = float(input())
+k = int(input())
 er_count = 0
 bolwe_count = 0
 suma = 0
 sr = 0
 max_temp = -100000000000
-for i in range(v):
+for i in range(k):
     c = input()
     if c == 'error':
         er_count += 1
@@ -13,7 +13,7 @@ for i in range(v):
         temp = float(c)
         sr += 1
         suma += temp
-        if temp > t:
+        if temp > p:
             bolwe_count += 1
         if temp > max_temp:
             max_temp = temp
@@ -21,7 +21,7 @@ if sr > 0:
     a = suma / sr
 else:
     a = 0.0
-print(v)
+print(k)
 print(er_count)
 print(bolwe_count)
 print(f"{max_temp:.1f}")
