@@ -3,7 +3,7 @@ k = int(input())
 er_count = 0
 bolwe_count = 0
 suma = 0
-sr = 0
+vern = 0
 max_temp = -100000000000
 for i in range(k):
     c = input()
@@ -11,14 +11,14 @@ for i in range(k):
         er_count += 1
     else:
         temp = float(c)
-        sr += 1
+        vern += 1
         suma += temp
         if temp > p:
             bolwe_count += 1
         if temp > max_temp:
             max_temp = temp
-if sr > 0:
-    a = suma / sr
+if vern > 0:
+    a = suma / vern
 else:
     a = 0.0
 print(k)
