@@ -12,15 +12,15 @@ def average(scores: list[float]) -> float:
     return round(res, 2)
 
 def ranking(names: list[str], scores: list[float]) -> list[str]:
-    indices = list(range(len(names)))
-    indices.sort(key=lambda i: scores[i], reverse=True)
-    return [names[i] for i in indices]
+    index = list(range(len(names)))
+    index.sort(key=lambda i: scores[i], reverse=True)
+    return [names[i] for i in index]
 
 def above_average(names: list[str], scores: list[float]) -> list[str]:
-    avg_score = average(scores)
+    bolwe = average(scores)
     result = []
     for i in range(len(names)):
-        if scores[i] > avg_score:
+        if scores[i] > bolwe:
             result.append(names[i])    
     return result
 
